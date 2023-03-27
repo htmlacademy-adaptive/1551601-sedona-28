@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Дария Исаева](https://up.htmlacademy.ru/adaptive/28/user/1551601).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
