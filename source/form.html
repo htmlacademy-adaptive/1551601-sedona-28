@@ -1,0 +1,129 @@
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list info-list">
+            <li class="info-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="info-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Sedona</h1>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__ title container__title">Оставьте свой отзыв</h2>
+          <p class="feedback__text container__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="feedback-form">
+            <legend class="feedback-form__legend legend">Представьтесь:</legend>
+            <label  class="feedback-form__label" for="fname">Имя*:</label>
+            <br><input class="feedback-form__input" type="text" id="fname" name="fname" placeholder="Имя" value="Пётр" required>
+            <br><label for="lname">Фамилия*:</label>
+            <br><input type="text" id="lname" name="lname" placeholder="Фамилия" value="Пустота" required>
+            <br><label for="sname">Отчество:</label>
+            <br><input type="text" id="sname" name="sname" placeholder="Отчество" value="Викторович">
+          </fieldset>
+          <fieldset class="feedback-form">
+            <legend class="feedback-form__legend legend">Контактная информация:</legend>
+            <label  class="feedback-form__label" for="phone-number">Контактный телефон*:</label>
+            <br><input class="feedback-form__input" type="number" id="phone-number" name ="phone-number" placeholder="Введите телефон" required>
+            <br><label  class="feedback-form__label" for="email">Электронная почта*:</label>
+            <br><input class="feedback-form__input" type="email" id="email" name ="email" placeholder="Введите e-mail" required>
+          </fieldset>
+          <fieldset class="feedback-select">
+            <legend class="feedback-select__legend legend">Ваше общее впечатление:</legend>
+            <label  class="feedback-select__label" for="well">Скорее положительное</label>
+            <input class="feedback-select__radio" type="radio" id="well" name ="grade" checked>
+            <br><label  class="feedback-select__label" for="negative">Скорее отрицательное</label>
+            <input class="feedback-select__select" type="radio" id="negative" name ="grade">
+            <br><label  class="feedback-select__label" for="no-answer">Затрудняюсь ответить</label>
+            <input class="feedback-select__radio" type="radio" id="no-answer" name ="grade">
+          </fieldset>
+          <fieldset class="feedback-list">
+            <legend class="feedback-list__legend legend">Посещенные достопримечательности:</legend>
+            <label class="feedback-list__label" type="checkbox" name="bridge" for="bridge">Мост Дьявола</label>
+            <input type="checkbox" id="bridge" checked>
+            <br><label class="feedback-list__label" type="checkbox" name="mountain" for="mountain">Гора-Колокол</label>
+            <input type="checkbox" id="mountain" checked>
+            <br><label class="feedback-list__label" type="checkbox" name="park" for="park">Слайд-парк</label>
+            <input type="checkbox" id="park" checked>
+            <br><label class="feedback-list__label" type="checkbox" name="rocks" for="rocks">Красные скалы</label>
+            <input type="checkbox" id="rocks" >
+          </fieldset>
+          <fieldset class="feedback-review">
+            <legend class="feedback-review__legend legend">Опишите свои эмоции:</legend>
+            <textarea class="feedback-review__field" name="review" placeholder="Опишите подробно все свои восторги "></textarea>
+          </fieldset>
+          <button class="feedback__button button" type="submit">Отправить отзыв</button>
+          <span class="feedback-extra">* — обязательные поля</span>
+        </form>
+      </section>
+      <section class="modal-error modal">
+        <div class="modal__container container">
+          <h2 class="container__title modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+          <p class="container__text modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="modal-error__button button">OK</button>
+      </section>
+      <section class="modal-review modal">
+        <div class="modal__container container">
+          <h2 class="container__title modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+          <p class="container__text modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="modal-review__button button">Закрыть окно</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" class="footer__hashtag"></a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#"><img src="/source/img/icons/icon-vk.svg"></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><img src="/source/img/icons/icon-telegram.svg"></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><img src="/source/img/icons/icon-youtube.svg"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__development development">
+        <p class="development__text">Разработано</p>
+        <a class="development__logo" href="#">
+          <img src="/source/img/htmlacademy.svg" width="28" height="35">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
