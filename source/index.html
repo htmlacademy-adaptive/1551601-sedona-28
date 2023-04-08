@@ -2,19 +2,21 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+        <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list info-list">
+        <div class="nav__wrapper visually-hidden">
+          <ul class="nav__list info-list">
             <li class="info-list__item">
               <a href="#">Главная</a>
             </li>
@@ -22,7 +24,7 @@
               <a href="#">Фото и видео</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="nav__list user-list">
             <li class="user-list__item">
               <a href="#">Форма отзыва</a>
             </li>
@@ -34,20 +36,20 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="poster">
+      <div class="poster">
         <h1 class="visually-hidden">Город Седона</h1>
         <div class="poster__wrapper">
-          <img class="poster-text" src="/source/img/text-index.svg">
+          <img class="poster-text" src="./img/text-index.svg">
         </div>
-      </section>
-      <section class="reasons">
-        <div class="container">
-          <h2 class="main-container__title container__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="main-container__text container__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <div class="reasons">
+        <div class="container reasons-container">
+          <h2 class="page-titles container__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="container__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--blue">
-            <h3 class="reasons-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <h3 class="page-titles">НАСТОЯЩИЙ ГОРОДОК</h3>
             <span class="reasons__number">— №1 —</span>
             <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             <img src="/source/img/photo/photo-city.png">
@@ -55,46 +57,46 @@
               <ul class="benefits__list">
                 <li class="benefits__items">
                   <img class=benefits__img src="/source/img/icons/house.svg">
-                  <h3 class="benefits__title">Жилье</h3>
+                  <h3 class="page-titles benefits__title">Жилье</h3>
                   <p class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="benefits__items">
                   <img class=benefits__img src="/source/img/icons/burger.svg">
-                  <h3 class="benefits__title">ЕДА</h3>
+                  <h3 class="page-titles benefits__title">ЕДА</h3>
                   <p class="benefits__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="benefits__items">
                   <img class=benefits__img src="/source/img/icons/present.svg">
-                  <h3 class="benefits__title">СУВЕНИРЫ</h3>
+                  <h3 class="page-titles benefits__title">СУВЕНИРЫ</h3>
                   <p class="benefits__text">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </div>
           </li>
           <li class="reasons__item reasons__item--blue">
-            <h3 class="reasons-title">Там есть мост дьявола</h3>
+            <h3 class="page-titles reasons-title">Там есть мост дьявола</h3>
             <span class="reasons__number">— №2 —</span>
             <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img src="/source/img/photo/photo-bridge.png">
           </li>
           <li class="reasons__item">
-            <h3 class="reasons-title">Небольшая площадь</h3>
+            <h3 class="page-titles reasons-title">Небольшая площадь</h3>
             <span class="reasons__number">— №3 —</span>
             <p class="reasons__text">Все интересные места находятся очень близко</p>
           </li>
           <li class="reasons__item">
-            <h3 class="reasons-title">Красивая дорога</h3>
+            <h3 class="page-titles reasons-title">Красивая дорога</h3>
             <span class="reasons__number">— №4 —</span>
             <p class="reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
           </li>
           <li class="reasons__item">
-            <h3 class="reasons-title">Мало туристов</h3>
+            <h3 class="page-titles reasons-title">Мало туристов</h3>
             <span class="reasons__number">— №5 —</span>
             <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
-      </section>
-      <section class="search">
+      </div>
+      <div class="search">
         <div class="search-container">
           <h3 class="search-container__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
           <p class="search-container__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -104,7 +106,7 @@
         <section class="map">
           <img class="map__image" src="/source/img/map-mobile.png">
         </section>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <a href="#" class="footer__hashtag"></a>
