@@ -3,6 +3,13 @@
   src:
     url("../../fonts/ptsans.woff")
     format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
   src:
     url("../../fonts/ptsans.woff2")
     format("woff2");
@@ -16,6 +23,13 @@
   src:
     url("../../fonts/ptsansbold.woff")
     format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
   src:
     url("../../fonts/ptsansbold.woff2")
     format("woff2");
