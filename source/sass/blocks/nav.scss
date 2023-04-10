@@ -6,3 +6,20 @@
   background-image: url("../../img/icons/icon-menu.svg");
   background-color: #ffffff;
 }
+
+.nav__list {
+  @include list-reset;
+  background-color: $base-color-blue;
+}
+
+.nav__item {
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $base-color;
+  @include text-title;
+}

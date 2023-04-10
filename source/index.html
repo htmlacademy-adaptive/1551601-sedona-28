@@ -8,28 +8,26 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo visually-hidden">
         <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="nav__wrapper visually-hidden">
-          <ul class="nav__list info-list">
-            <li class="info-list__item">
-              <a href="#">Главная</a>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Главная</a>
             </li>
-            <li class="info-list__item">
-              <a href="#">Фото и видео</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#"class="nav__link" >Фото и видео</a>
             </li>
-          </ul>
-          <ul class="nav__list user-list">
-            <li class="user-list__item">
-              <a href="#">Форма отзыва</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Форма отзыва</a>
             </li>
-            <li class="user-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -44,15 +42,17 @@
       </div>
       <div class="reasons">
         <div class="container reasons-container">
-          <h2 class="page-titles container__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="container__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="page-titles container__title">СЕДОНА — небольшой <br>городок в Аризоне, заслуживающий большего!</h2>
+          <p class="container__text">Рассмотрим 5 причин, по которым <br>Седона круче, чем гранд каньон!</p>
         </div>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--blue">
-            <h3 class="page-titles">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <span class="reasons__number">— №1 —</span>
-            <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="/source/img/photo/photo-city.png">
+            <div class="reasons__container">
+              <p class="page-titles reasons__title">НАСТОЯЩИЙ ГОРОДОК</p>
+              <span class="reasons__number">— №1 —</span>
+              <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img src="img/photo/photo-city.png">
             <div class="benefits">
               <ul class="benefits__list">
                 <li class="benefits__items">
