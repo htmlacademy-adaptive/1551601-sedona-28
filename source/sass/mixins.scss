@@ -10,3 +10,11 @@
   font-weight: 700;
   line-height: 26px;
 }
+
+@mixin large-print {
+  font-family: 'PTSans';
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}

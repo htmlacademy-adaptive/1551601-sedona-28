@@ -16,10 +16,12 @@
   text-align: center;
   padding-top: 17px;
   padding-bottom: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav__link {
   text-decoration: none;
   color: $base-color;
+
   @include text-title;
 }

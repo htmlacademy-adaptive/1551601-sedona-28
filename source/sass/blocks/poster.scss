@@ -4,4 +4,11 @@
   height: 390px;
   padding-top: 90px;
   text-align: center;
+
+  &--form {
+    background-image: url("../../img/photo/back-desktop.png");
+    height: 158px;
+    padding-top: 50px;
+    background-size: cover;
+  }
 }

@@ -1,0 +1,145 @@
+.form__container {
+  padding-top: 24px;
+  padding-bottom: 39px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form__container:last-of-type {
+  border: none;
+}
+
+.form__container--radio {
+  padding-bottom: 24px;
+}
+
+.form__legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin-left: 16px;
+}
+
+.form__input {
+  width: 280px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__selector:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__selector-label {
+  display: flex;
+  align-items: center;
+
+  @include large-print;
+  text-transform: none;
+}
+
+.form__selector-custom {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.form__selector-indicator {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__selector-custom::before {
+  content: '';
+  display: none;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__selector-indicator:checked + .form__selector-custom::before {
+  display: block;
+}
+
+.form__checkbox-custom {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  margin-right: 16px;
+}
+
+
+.form__checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__checkbox-custom::before {
+  content: '';
+  display: none;
+  background-image: url("../../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 22px;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__checkbox:checked + .form__checkbox-custom::before {
+  display: block;
+}
+
+.form__container--review {
+  padding-bottom: 22px;
+}
+
+.form__review {
+  display: block;
+  border: none;
+  background-color: #f2f2f2;
+
+  &::placeholder {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  @include large-print;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  resize: none;
+  margin-bottom: 56px;
+}

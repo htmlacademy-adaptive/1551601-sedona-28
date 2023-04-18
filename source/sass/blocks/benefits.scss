@@ -1,12 +1,26 @@
 .benefits {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 23px;
-  margin-bottom: 46px;
+  padding: 23px 18px 46px;
 }
 
 .benefits__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.benefits__title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.benefits__text {
+  margin: 0;
+}
+
+.benefits__wrapper {
+  margin-bottom: 25px;
+
+  &--last-type {
+    margin-bottom: 0;
+  }
 }

@@ -2,12 +2,34 @@
   @include list-reset;
 }
 
+.reasons__description {
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 33px;
+}
+
+.reasons__description-title {
+  margin-bottom: 35px;
+}
+
+.reasons__description-text {
+  margin: 0;
+}
+
 .reasons__container {
-  background-color: $base-color-blue;
   padding-top: 54px;
   padding-bottom: 40px;
-  color: $base-color;
   text-align: center;
+  background-color: #eeeeee;
+
+  &--grey {
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  &--blue {
+    background-color: $base-color-blue;
+    color: $base-color;
+  }
 }
 
 .reasons__title {
