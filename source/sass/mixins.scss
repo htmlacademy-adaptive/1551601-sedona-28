@@ -1,0 +1,20 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+@mixin text-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@mixin large-print {
+  font-family: 'PTSans';
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}

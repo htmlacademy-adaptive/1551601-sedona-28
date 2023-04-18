@@ -1,0 +1,12 @@
+.button {
+  background-color: $base-color-blue;
+  border: none;
+  height: 58px;
+}
+
+.button__link {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $base-color;
+}

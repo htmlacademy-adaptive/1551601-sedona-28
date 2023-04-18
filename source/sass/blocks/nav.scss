@@ -1,0 +1,27 @@
+.nav__toggle {
+  width: 23px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  background-image: url("../../img/icons/icon-menu.svg");
+  background-color: #ffffff;
+}
+
+.nav__list {
+  @include list-reset;
+  background-color: $base-color-blue;
+}
+
+.nav__item {
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $base-color;
+
+  @include text-title;
+}

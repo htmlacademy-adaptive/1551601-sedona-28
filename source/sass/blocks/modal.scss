@@ -1,0 +1,46 @@
+.modal {
+  text-align: center;
+}
+
+.modal__error {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 41px;
+  padding-right: 42px;
+}
+
+.modal__title {
+  margin: 0;
+}
+
+.modal__text {
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+
+.modal__button-error {
+  width: 180px;
+}
+
+.modal__button {
+  font-size: 18px;
+}
+
+.modal__review {
+  padding-left: 37px;
+  padding-right: 39px;
+  padding-top: 36px;
+}
+
+.modal__review-button {
+  display: block;
+  width: 280px;
+  margin: 20 auto;
+}
+
+.modal__review-frame {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 98px;
+}

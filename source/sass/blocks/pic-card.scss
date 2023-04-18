@@ -1,0 +1,26 @@
+.pic-card {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pic-card__name {
+  font-weight: 700;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.pic-card__author {
+  margin: 0;
+  text-transform: none;
+}
+
+.pic-card__like {
+  display: inline-block;
+  margin-top: 11px;
+}
+
+.pic-card__icon {
+  margin-right: 14px;
+  vertical-align: bottom;
+}

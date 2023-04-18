@@ -1,0 +1,30 @@
+.footer__container {
+  padding: 33px 83px;
+}
+
+.footer__hashtag {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer__hashtag-text {
+  font-size: 21px;
+  font-weight: 700px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}
+
+.footer__development {
+  display: flex;
+  flex-direction: row;
+  width: 129px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
