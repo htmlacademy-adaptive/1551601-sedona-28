@@ -1,5 +1,6 @@
 .benefits {
   padding: 23px 18px 46px;
+  background-color: $base-color;
 }
 
 .benefits__list {
@@ -22,5 +23,31 @@
 
   &--last-type {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .benefits {
+    padding: 0;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .benefits__items {
+    width: calc(100% / 3);
+    padding: 158px 33px 60px;
+    text-align: center;
+  }
+
+  .benefits__title {
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .benefits__wrapper {
+    margin: 0;
   }
 }

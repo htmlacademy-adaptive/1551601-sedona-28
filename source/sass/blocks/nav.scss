@@ -4,7 +4,7 @@
   border: none;
   padding: 0;
   background-image: url("../../img/icons/icon-menu.svg");
-  background-color: #ffffff;
+  background-color: $base-color;
 }
 
 .nav__list {
@@ -24,4 +24,34 @@
   color: $base-color;
 
   @include text-title;
+}
+
+@media (min-width: $tablet-size) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    background-color: $base-color;
+  }
+
+  .nav__item {
+    width: calc(100% / 5);
+    border: none;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    color: $black;
+
+    &--brown {
+      color: $first-item;
+    }
+  }
+
+  .nav__item:nth-child(2n):not(:nth-child(4n)) {
+    margin-right: calc(100% / 5);
+  }
+
+  .nav__toggle {
+    display: none;
+  }
 }

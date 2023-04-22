@@ -1,11 +1,14 @@
 .reasons__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 
 .reasons__description {
   text-align: center;
-  padding-top: 39px;
-  padding-bottom: 33px;
+  padding: 32px 18px;
+  background-color: $base-color;
 }
 
 .reasons__description-title {
@@ -39,4 +42,58 @@
 .reasons__text {
   margin: 0;
   margin-top: 17px;
+}
+
+
+@media (min-width: $tablet-size) {
+  .reasons__description {
+    width: 520px;
+    margin: 0 auto;
+    padding: 47.5px 0 55.5px;
+  }
+
+  .reasons__description-title {
+    font-size: 21px;
+  }
+
+  .reasons__container {
+    width: 256px;
+    padding: 40px;
+
+    &--grey {
+      border: none;
+    }
+  }
+
+  .reasons__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reasons__pic {
+    width: calc(100% - 256px);
+  }
+
+  .reasons__text {
+    margin-top: 23px;
+  }
+
+  .reasons__title {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .reasons__container {
+    width: 400px;
+    padding: 50px;
+  }
+
+  .reasons__pic {
+    width: 800px;
+  }
+
+  .reasons__title {
+    padding: 0 75px;
+  }
 }

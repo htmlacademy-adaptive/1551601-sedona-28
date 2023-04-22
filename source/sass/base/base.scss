@@ -17,3 +17,9 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-size) {
+  .page-titles {
+    font-size: 21px;
+  }
+}

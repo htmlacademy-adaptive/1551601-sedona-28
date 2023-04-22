@@ -15,6 +15,10 @@
   margin-bottom: 30px;
 }
 
+.footer {
+  background-color: $base-color;
+}
+
 .footer__social {
   margin-bottom: 30px;
 }
@@ -27,4 +31,43 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-size) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px;
+    align-items: center;
+  }
+
+  .footer__hashtag-text {
+    margin: 0;
+  }
+
+  .footer__development {
+    margin: 0;
+    width: 230px;
+  }
+
+  .footer__logo {
+    width: 37px;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-size) {
+  .footer__container {
+    padding: 36px 120px;
+  }
+
+  .footer__development {
+    margin: 0;
+    width: 129px;
+  }
 }
