@@ -39,8 +39,8 @@
 }
 
 .form__item {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__item:not(:last-child) {
@@ -78,7 +78,7 @@
 }
 
 .form__selector-custom::before {
-  content: '';
+  content: "";
   display: none;
   width: 16px;
   height: 16px;
@@ -115,7 +115,7 @@
 }
 
 .form__checkbox-custom::before {
-  content: '';
+  content: "";
   display: none;
   background-image: url("../../img/icons/tick.svg");
   background-repeat: no-repeat;
@@ -217,7 +217,6 @@
     width: 50%;
   }
 }
-
 
 @media (min-width: $desktop-size) {
   .form__list--radio {
