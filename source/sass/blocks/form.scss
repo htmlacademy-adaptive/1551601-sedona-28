@@ -220,15 +220,27 @@
 
 @media (min-width: $desktop-size) {
   .form__list--radio {
-    padding: 0 53px;
+    padding: 17px 53px;
+  }
+
+  .form__list--checkbox {
+    padding: 31px 44.5px;
   }
 
   .form__selector {
-    width: 31%;
+    width: 32.33%;
+
+    &:last-child {
+      width: 238px;
+    }
+
+    &:not(:last-child) {
+      margin: 0;
+      margin-right: 28px;
+    }
   }
 
-  .form__selector:not(:last-child) {
-    margin: 0;
-    margin-right: 28px;
+  .form__container {
+    padding-top: 56px;
   }
 }

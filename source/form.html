@@ -85,64 +85,68 @@
             <div class="form__container form__container--radio">
               <fieldset class="form__fieldset">
                 <legend class="form__legend page-titles">Ваше общее впечатление:</legend>
-                <ul class="form__list form__list--radio">
-                  <li class="form__selector">
-                    <label  class="form__selector-label">
-                      <input class="form__selector-indicator" type="radio" value="positive" name ="grade" checked>
-                      <span class="form__selector-custom"></span>
-                      Скорее положительное
-                    </label>
-                  </li>
-                  <li class="form__selector">
-                    <label  class="form__selector-label">
-                      <input class="form__selector-indicator" type="radio" value="negative" name ="grade">
-                      <span class="form__selector-custom"></span>
-                      Скорее отрицательное
-                    </label>
-                  </li>
-                  <li class="form__selector">
-                    <label  class="form__selector-label">
-                      <input class="form__selector-indicator" type="radio" value="no-answer" name ="grade">
-                      <span class="form__selector-custom"></span>
-                      Затрудняюсь ответить
-                    </label>
-                  </li>
-                </ul>
+                <div class="form__list--radio">
+                  <ul class="form__list">
+                    <li class="form__selector">
+                      <label  class="form__selector-label">
+                        <input class="form__selector-indicator" type="radio" value="positive" name ="grade" checked>
+                        <span class="form__selector-custom"></span>
+                        Скорее положительное
+                      </label>
+                    </li>
+                    <li class="form__selector">
+                      <label  class="form__selector-label form__selector--wrong">
+                        <input class="form__selector-indicator" type="radio" value="negative" name ="grade">
+                        <span class="form__selector-custom"></span>
+                        Скорее отрицательное
+                      </label>
+                    </li>
+                    <li class="form__selector">
+                      <label  class="form__selector-label">
+                        <input class="form__selector-indicator" type="radio" value="no-answer" name ="grade">
+                        <span class="form__selector-custom"></span>
+                        Затрудняюсь ответить
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
             </div>
             <div class="form__container form__container--checkbox">
               <fieldset class="form__fieldset">
                 <legend class="form__legend page-titles"> Посещенные достопримечательности:</legend>
-                <ul class="form__list form__list--checkbox">
-                  <li class="form__selector">
-                    <label class="form__selector-label" type="checkbox" name="bridge" value="bridge">
-                      <input class="form__checkbox" type="checkbox" checked>
-                      <span class="form__checkbox-custom"></span>
-                      Мост Дьявола
-                    </label>
-                  </li>
-                  <li class="form__selector">
-                    <label class="form__selector-label" type="checkbox" name="bridge">
-                      <input class="form__checkbox" type="checkbox" checked>
-                      <span class="form__checkbox-custom"></span>
-                      Гора-Колокол
-                    </label>
-                  </li>
-                  <li class="form__selector">
-                    <label class="form__selector-label" type="checkbox" name="bridge">
-                      <input class="form__checkbox" type="checkbox" checked>
-                      <span class="form__checkbox-custom"></span>
-                      Слайд-парк
-                    </label>
-                  </li>
-                  <li class="form__selector">
-                    <label class="form__selector-label" type="checkbox" name="bridge">
-                      <input class="form__checkbox" type="checkbox" id="bridge">
-                      <span class="form__checkbox-custom"></span>
-                      Красные скалы
-                    </label>
-                  </li>
-                </ul>
+                <div class="form__list--checkbox">
+                  <ul class="form__list">
+                    <li class="form__selector">
+                      <label class="form__selector-label" type="checkbox" name="bridge" value="bridge">
+                        <input class="form__checkbox" type="checkbox" checked>
+                        <span class="form__checkbox-custom"></span>
+                        Мост Дьявола
+                      </label>
+                    </li>
+                    <li class="form__selector">
+                      <label class="form__selector-label" type="checkbox" name="bridge">
+                        <input class="form__checkbox" type="checkbox" checked>
+                        <span class="form__checkbox-custom"></span>
+                        Гора-Колокол
+                      </label>
+                    </li>
+                    <li class="form__selector">
+                      <label class="form__selector-label" type="checkbox" name="bridge">
+                        <input class="form__checkbox" type="checkbox" checked>
+                        <span class="form__checkbox-custom"></span>
+                        Слайд-парк
+                      </label>
+                    </li>
+                    <li class="form__selector">
+                      <label class="form__selector-label form__selector--red" type="checkbox" name="bridge">
+                        <input class="form__checkbox" type="checkbox" id="bridge">
+                        <span class="form__checkbox-custom"></span>
+                        Красные скалы
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
             </div>
             <div class="form__container form__container--review">
@@ -158,22 +162,6 @@
               </fieldset>
             </div>
           </form>
-        </section>
-        <section class="modal">
-          <div class="modal__error">
-            <h2 class="modal__title page-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="modal__button-error button"><a class="modal__button button__link">OK</a></button>
-          </div>
-        </section>
-        <section class="modal">
-          <div class="modal__review">
-            <h2 class="modal__title page-title">Ваш отзыв отправлен!</h2>
-            <p class="modal__text modal__text--send">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          </div>
-          <div class="modal__review-frame">
-            <button class="modal__review-button button"><a class="modal__button button__link">Закрыть окно</a></button>
-          </div>
         </section>
       </main>
       <footer class="footer">
@@ -201,5 +189,21 @@
         </div>
       </footer>
     </div>
+    <section class="modal">
+      <div class="modal__error">
+        <h2 class="modal__title page-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button-error button"><a class="modal__button button__link">OK</a></button>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal__review">
+        <h2 class="modal__title page-title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text modal__text--send">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__review-frame">
+        <button class="modal__review-button button"><a class="modal__button button__link">Закрыть окно</a></button>
+      </div>
+    </section>
   </body>
 </html>
