@@ -12,3 +12,26 @@
 .container__text {
   margin: 0;
 }
+
+
+@media (min-width: $tablet-size) {
+  .container {
+    padding-top: 66px;
+    padding-bottom: 64px;
+    width: 458px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .container__title {
+    margin-bottom: 31px;
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-size) {
+  .container {
+    padding-top: 100px;
+  }
+}

@@ -1,7 +1,7 @@
 .search-container {
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding: 38px 18px 49px;
   text-align: center;
+  background-color: $base-color;
 }
 
 .search-container__title {
@@ -17,4 +17,20 @@
 
 .search__button {
   width: 284px;
+}
+
+@media (min-width: $tablet-size) {
+  .search-container {
+    padding: 60px 155px 55px;
+  }
+
+  .search-container__title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .search-container__text {
+    margin: 0;
+    margin-bottom: 45px;
+  }
 }

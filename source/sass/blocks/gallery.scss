@@ -1,3 +1,90 @@
 .gallery {
   padding: 0 20px;
 }
+
+.gallery__list {
+  @include list-reset;
+}
+
+.gallery__card {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.gallery__card-name {
+  font-weight: 700;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.gallery__card-author {
+  margin: 0;
+  text-transform: none;
+}
+
+.gallery__card-like {
+  display: inline-block;
+  margin-top: 11px;
+}
+
+.gallery__card-icon {
+  margin-right: 14px;
+  vertical-align: bottom;
+}
+
+@media (min-width: $tablet-size) {
+  .gallery {
+    padding: 0 60px;
+    display: grid;
+  }
+
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__card:first-of-type {
+    grid-column: 1 / -1;
+  }
+
+  .gallery__wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 22px 20px 15px;
+    justify-content: space-between;
+    background-color: $light-grey;
+
+    &--grey {
+      background-color: #eaeaea;
+    }
+  }
+
+  .gallery__card {
+    padding: 0;
+  }
+
+  .gallery__card-name {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-size) {
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    color: $base-color;
+  }
+}
