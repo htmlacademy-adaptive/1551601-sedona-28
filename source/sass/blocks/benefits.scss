@@ -1,5 +1,5 @@
 .benefits {
-  padding: 23px 18px 46px;
+  padding: 23px 18px 46px 65px;
   background-color: $base-color;
 }
 
@@ -20,9 +20,46 @@
 
 .benefits__wrapper {
   margin-bottom: 25px;
+  position: relative;
 
   &--last-type {
     margin-bottom: 0;
+  }
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/house.svg");
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -47px;
+    top: -7px;
+  }
+
+  &--burger::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/burger.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    left: -47px;
+    top: -7px;
+  }
+
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/present.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    left: -47px;
+    top: -7px;
   }
 }
 
@@ -49,5 +86,72 @@
 
   .benefits__wrapper {
     margin: 0;
+
+    &--house::before {
+      content: "";
+      width: 77px;
+      height: 72px;
+      left: 50%;
+      top: -103px;
+      transform: translateX(-50%);
+    }
+
+    &--burger::before {
+      content: "";
+      width: 80px;
+      height: 76px;
+      top: -103px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--souvenirs::before {
+      content: "";
+      width: 67px;
+      height: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -103px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .benefits__items {
+    width: calc(100% / 3);
+    padding: 158px 50px 60px;
+    text-align: center;
+  }
+
+  .benefits__wrapper {
+    &--house::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icons/house.svg");
+      width: 80px;
+      height: 74px;
+      background-size: contain;
+      top: -103px;
+    }
+
+    &--burger::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icons/burger.svg");
+      width: 73px;
+      height: 69px;
+      background-size: contain;
+      top: -103px;
+    }
+
+    &--souvenirs::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icons/present.svg");
+      width: 78px;
+      height: 75px;
+      background-size: contain;
+      top: -103px;
+    }
   }
 }

@@ -163,6 +163,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 44px;
+    justify-content: space-between;
   }
 
   .form__container {
@@ -170,11 +171,24 @@
     border: none;
 
     &--name {
-      padding-right: 28.5px;
+      position: relative;
+      width: 295px;
+    }
+
+    &--name::after {
+      content: "";
+      position: absolute;
+      width: 338px;
+      height: 1px;
+      transform: rotate(90deg);
+      background-color: $decor-grey;
+      transform-origin: right;
+      bottom: -12px;
+      left: -10px;
     }
 
     &--info {
-      padding-left: 28.5px;
+      width: 295px;
     }
 
     &--radio {
@@ -194,6 +208,37 @@
 
   .form__legend {
     margin-bottom: 28px;
+    width: 100%;
+    position: relative;
+
+    &--fixed {
+      display: inline-block;
+      width: 300px;
+    }
+
+    &--impression::before,
+    &--sights::before,
+    &--review::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      background: $decor-grey;
+      top: 50%;
+      left: 0;
+    }
+
+    &--impression::after,
+    &--sights::after,
+    &--review::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      background: $decor-grey;
+      top: 50%;
+      right: 0;
+    }
   }
 
   .form__review {
@@ -203,6 +248,7 @@
   .form__list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 
     &--radio {
       padding: 0 36px;
@@ -215,6 +261,10 @@
 
   .form__selector {
     width: 50%;
+  }
+
+  .form__input {
+    width: 295px;
   }
 }
 
@@ -242,5 +292,48 @@
 
   .form__container {
     padding-top: 56px;
+
+    &--name {
+      width: 430px;
+    }
+
+    &--info {
+      width: 430px;
+    }
+
+    &--name::after {
+      left: 143px;
+    }
+  }
+
+  .form__sights {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .form__selector {
+      width: auto;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form__input {
+    width: 430px;
+  }
+
+  .form__legend {
+    &--impression::before,
+    &--sights::before,
+    &--review::before {
+      width: 280px;
+    }
+
+    &--impression::after,
+    &--sights::after,
+    &--review::after {
+      width: 280px;
+    }
   }
 }

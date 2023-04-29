@@ -3,6 +3,7 @@
 }
 
 .presentation__video {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -20,6 +21,20 @@
 .presentation__description {
   margin: 0;
   margin-top: 27px;
+}
+
+.presentation__button {
+  position: absolute;
+  background-image: url("../img/icons/polygon.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-size) {
