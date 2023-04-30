@@ -1,6 +1,9 @@
 .poster {
-  background: url("../img/photo/back-mobile.png") no-repeat;
+  background-image: url("../../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile.png");
+  background-repeat: no-repeat no-repeat;
   background-color: $base-color;
+  background-position: bottom, center top;
+  background-size: cover;
   padding: 90px 0 85px;
   text-align: center;
 
@@ -12,12 +15,12 @@
   }
 }
 
-
 @media (min-width: $tablet-size) {
   .poster {
     padding: 77px 0 91px;
-    background: url("../img/photo/back-desktop.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
 
     &--form {
       height: 290px;
@@ -38,6 +41,11 @@
 
 
 @media (min-width: $desktop-size) {
+  .poster {
+    background-image: url("../../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
   .poster--form {
     height: 301px;
     padding: 101px 0 120px;
