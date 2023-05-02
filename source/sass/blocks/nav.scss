@@ -65,12 +65,8 @@
     height: 56px;
   }
 
-  .nav--nojs .nav__list {
-    position: relative;
-  }
-
-  .nav--nojs .nav__toggle {
-    display: block;
+  .nav__menu--nojs .nav__button--close {
+    display: none;
   }
 }
 

@@ -22,10 +22,10 @@
 .reasons__container {
   padding: 54px 18px 40px;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: $reasons-grey;
 
   &--grey {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid $border-grey;
     padding: 24px 33px;
   }
 

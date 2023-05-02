@@ -1,5 +1,5 @@
 .poster {
-  background-image: url("../../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile.png");
+  background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile.jpg");
   background-repeat: no-repeat no-repeat;
   background-color: $base-color;
   background-position: bottom, center top;
@@ -15,10 +15,16 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .poster {
+    background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-size) {
   .poster {
     padding: 77px 0 91px;
-    background-image: url("../../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
+    background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: contain, cover;
 
@@ -37,17 +43,29 @@
       height: 77px;
     }
   }
+
+  @media (min-resolution: 2dppx) {
+    .poster {
+      background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet@2x.jpg");
+    }
+  }
 }
 
 
 @media (min-width: $desktop-size) {
   .poster {
-    background-image: url("../../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop.jpg");
+    background-image: url("../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop.jpg");
     background-repeat: no-repeat;
   }
 
   .poster--form {
     height: 301px;
     padding: 101px 0 120px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .poster {
+      background-image: url("../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop@2x.jpg");
+    }
   }
 }
