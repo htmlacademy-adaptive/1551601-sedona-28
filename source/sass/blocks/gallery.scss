@@ -88,4 +88,8 @@
     background-color: rgba($color: $black, $alpha: 0.3);
     color: $base-color;
   }
+
+  .gallery__card-img {
+    display: block;
+  }
 }
