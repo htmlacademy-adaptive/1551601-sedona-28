@@ -1,4 +1,37 @@
 .map {
   background-color: $base-color;
+  display: block;
+  height: 350px;
   width: 100%;
+  background-image: url("../img/photo/map-mobile.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+  .map {
+    background-image: url("../img/photo/map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .map {
+    background-image: url("../img/photo/map-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map {
+      background-image: url("../img/photo/map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .map {
+    background-image: url("../img/photo/map-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map {
+      background-image: url("../img/photo/map-desktop@2x.jpg");
+    }
+  }
 }
