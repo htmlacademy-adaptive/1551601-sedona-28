@@ -5,21 +5,10 @@
 .main-header__logo {
   position: absolute;
   z-index: 2;
-  left: 21%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-header__logo-image {
   text-align: center;
-}
-
-@media (min-width: $tablet-size) {
-  .main-header__logo {
-    left: 38%;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .main-header__logo {
-    left: 42%;
-  }
 }

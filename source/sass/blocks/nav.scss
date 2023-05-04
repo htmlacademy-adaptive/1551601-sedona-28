@@ -1,10 +1,12 @@
 .nav {
   width: 320px;
-  top: 0;
-  left: 0;
+  min-height: 56px;
+  position: relative;
 }
 
 .nav__list {
+  flex-direction: column;
+
   @include list-reset;
   background-color: $base-color-blue;
 }
@@ -30,47 +32,51 @@
   top: 17px;
   right: 20px;
   z-index: 2;
+  cursor: pointer;
 }
 
 @media (max-width: $mobile-size) {
-  .nav__menu-bar {
-    height: 56px;
-  }
-
-  .nav__button--close {
-    z-index: 20;
-  }
-
-  .nav__menu--closed .nav__list {
+  .nav__list {
     display: none;
   }
 
-  .nav__menu--closed .nav__button--close {
-    display: none;
+  .nav__menu--nojs .nav__list {
+    display: block;
+  }
+
+  .nav__menu--nojs .main-header__logo {
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+    position: static;
+    left: unset;
+    transform: unset;
   }
 
   .nav__menu--opened .nav__list {
     position: absolute;
-    display: block;
+    display: flex;
     width: 320px;
-    z-index: 10;
+  }
+
+  .nav__menu--opened .nav__button--close {
+    display: block;
   }
 
   .nav__menu--opened .main-header__logo {
     display: none;
   }
 
-  .nav__menu {
-    position: relative;
-    height: 56px;
+  .nav__menu--opened .nav__button--open {
+    display: none;
   }
 
-  .nav--nojs .nav__list {
-    position: relative;
+  .nav__menu--nojs .nav__toggle {
+    display: none;
   }
 
-  .nav--nojs .nav__toggle {
-    display: block;
+  .nav__menu--nojs .nav__button--close {
+    display: none;
   }
 }
 
