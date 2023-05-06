@@ -32,6 +32,10 @@
 .gallery__card-icon {
   margin-right: 14px;
   vertical-align: bottom;
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+  fill: #000000;
 }
 
 @media (min-width: $tablet-size) {

@@ -32,6 +32,33 @@
   padding: 16px;
   font-weight: 700;
   font-size: 18px;
+  line-height: 26px;
+
+  &--icon {
+    width: 222px;
+  }
+}
+
+.form__input-icon {
+  display: flex;
+}
+
+.form__icon {
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: $form-grey;
+  background-position: 50% 50%;
+
+  &--phone {
+    background-image: url("../img/icons/phone.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mail {
+    background-image: url("../img/icons/mail.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .form__list {
@@ -265,6 +292,10 @@
 
   .form__input {
     width: 295px;
+
+    &--icon {
+      width: 237px;
+    }
   }
 }
 
@@ -321,6 +352,10 @@
 
   .form__input {
     width: 430px;
+
+    &--icon {
+      width: 372px;
+    }
   }
 
   .form__legend {
