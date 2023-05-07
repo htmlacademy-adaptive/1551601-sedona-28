@@ -40,6 +40,14 @@
     display: none;
   }
 
+  .nav__button-close {
+    fill: $base-color;
+  }
+
+  .nav__button-open {
+    fill: $blue-mark;
+  }
+
   .nav__menu--nojs .nav__list {
     display: block;
   }
