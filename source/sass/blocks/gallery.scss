@@ -34,8 +34,7 @@
   vertical-align: bottom;
   width: 23px;
   height: 21px;
-  opacity: 0.3;
-  fill: #000000;
+  fill: rgba($color: $black, $alpha: 0.3);
 }
 
 @media (min-width: $tablet-size) {
@@ -95,5 +94,9 @@
 
   .gallery__card-img {
     display: block;
+  }
+
+  .gallery__card-icon {
+    fill: $base-color;
   }
 }
