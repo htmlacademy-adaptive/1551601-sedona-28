@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,6 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
+    <div class="pseudo-cat"></div>
     <div class="wrapper">
       <header class="main-header">
         <nav class="nav nav__menu--nojs">
@@ -45,7 +47,7 @@
         <section class="poster poster--form">
           <h1 class="visually-hidden">Город Седона</h1>
           <div class="poster__wrapper">
-            <img class="poster__text poster__text--form" src="./img/SEDONA.png">
+            <img class="poster__text poster__text--form" src="./img/SEDONA.png" alt="Седона">
           </div>
         </section>
         <section class="gallery">
@@ -58,7 +60,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo/photo-1-desktop.jpg 1x, ./img/photo/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo/photo-1-tablet.jpg 1x, ./img/photo/photo-1-tablet@2x.jpg 2x">
-                <img class="gallery__card-img" src="./img/photo/photo-1-mobile.jpg" srcset="../img/photo/photo-1-mobile@2x.jpg 2x">
+                <img class="gallery__card-img" src="./img/photo/photo-1-mobile.jpg" srcset="../img/photo/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
               </picture>
               <div class="gallery__wrap">
                 <div>
@@ -77,14 +79,14 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo/photo-2-desktop.jpg 1x, ./img/photo/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo/photo-2-tablet.jpg 1x, ./img/photo/photo-2-tablet@2x.jpg 2x">
-                <img class="gallery__card-img" src="./img/photo/photo-2-mobile.jpg" srcset="../img/photo/photo-2-mobile@2x.jpg 2x">
+                <img class="gallery__card-img" src="./img/photo/photo-2-mobile.jpg" srcset="../img/photo/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
               </picture>
               <div class="gallery__wrap">
                 <div>
                   <p class="gallery__card-name">Местная растительность</p>
                   <p class="gallery__card-author">Автор фото: Сергей</p>
                 </div>
-                <div class="gallery__card__like">
+                <div class="gallery__card-like">
                   <svg class="gallery__card-icon" width="23" height="21">
                     <use xlink:href="img/sprite.svg#like-grey"></use>
                   </svg>
@@ -96,7 +98,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo/photo-3-desktop.jpg 1x, ./img/photo/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo/photo-3-tablet.jpg 1x, ./img/photo/photo-3-tablet@2x.jpg 2x">
-                <img class="gallery__card-img" src="./img/photo/photo-3-mobile.jpg" srcset="./img/photo/photo-3-mobile@2x.jpg 2x">
+                <img class="gallery__card-img" src="./img/photo/photo-3-mobile.jpg" srcset="./img/photo/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
               </picture>
               <div class="gallery__wrap gallery__wrap--grey">
                 <div>
@@ -115,7 +117,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo/photo-4-desktop.jpg 1x, ./img/photo/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo/photo-4-tablet.jpg 1x, ./img/photo/photo-4-tablet@2x.jpg 2x">
-                <img class="gallery__card-img" src="./img/photo/photo-4-mobile.jpg" srcset="../img/photo/photo-4-mobile@2x.jpg 2x">
+                <img class="gallery__card-img" src="./img/photo/photo-4-mobile.jpg" srcset="../img/photo/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
               <div class="gallery__wrap">
                 <div>
@@ -134,13 +136,13 @@
           <section class="presentation">
             <div class="presentation__text">
               <h2 class="presentation__title page-titles">Все еще сомневаетесь?</h2>
-              <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <p class="presentation__description">Смотрите видеопрезентацию и скорее&nbspза&nbspбилетами, пока они не подорожали в очередной раз!</p>
             </div>
             <div class="presentation__video">
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo/video-desktop.jpg 1x, ./img/photo/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo/video-tablet.jpg 1x, ./img/photo/video-tablet@2x.jpg 2x">
-                <img class="presentation__pic" src="./img/photo/video-mobile.jpg" srcset="./img/photo/video-mobile@2x.jpg 2x">
+                <img class="presentation__pic" src="./img/photo/video-mobile.jpg" srcset="./img/photo/video-mobile@2x.jpg 2x" alt="Видео, дорога в Седону">
               </picture>
               <button class="presentation__button">
                 <span class="visually-hidden">Показать видео.</span>
@@ -152,20 +154,18 @@
       <footer class="footer">
         <div class="footer__container">
           <a href="#" class="footer__hashtag"><h3 class="footer__hashtag-text">#visitSEDONA</h3></a>
-          <div class="footer__social social">
+<!--          <div class="footer__social social">-->
             <ul class="social__list">
               <li class="social__item">
                 <a href="#">
-                  <svg class="social__icons" width="24" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_60987_971)">
-<!--                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z" fill="white"/></g><defs><clipPath id="clip0_60987_971"><rect width="24" height="24" fill="white"/></clipPath></defs>-->
+                  <svg class="social__icons" width="24" height="14">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
-                  </a>
+                </a>
               </li>
               <li class="social__item">
                 <a href="#">
                   <svg class="social__icons" width="22" height="18">
-<!--                     <path d="M21.4391 1.62225L18.2704 16.566C18.0311 17.6205 17.4079 17.883 16.5221 17.3865L11.6936 13.8285L9.36415 16.0695C9.10615 16.3275 8.8909 16.5427 8.39365 16.5427L8.7409 11.6257L17.6891 3.54C18.0784 3.1935 17.6044 3.00075 17.0846 3.348L6.02215 10.314L1.25965 8.823C0.223899 8.49975 0.205149 7.78725 1.47565 7.29L20.1034 0.113249C20.9659 -0.210001 21.7204 0.305249 21.4391 1.623V1.62225Z" fill="white"/>-->
                     <use xlink:href="img/sprite.svg#telegram"></use>
                   </svg>
                 </a>
@@ -178,7 +178,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+<!--         </div> -->
           <div class="footer__development">
             <p class="footer__text">Разработано</p>
             <a class="footer__logo" href="#">
@@ -190,6 +190,6 @@
         </div>
       </footer>
     </div>
-    <script src="./js/main.js" charset="utf-8"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

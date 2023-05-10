@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .presentation__video {
@@ -11,16 +11,17 @@
   width: 280px;
   height: 177px;
   background-color: $base-color-blue;
+  display: block;
 }
 
 .presentation__text {
   text-align: center;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 
 .presentation__description {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 26px;
 }
 
 .presentation__button {
@@ -53,7 +54,7 @@
   }
 
   .presentation__text {
-    padding-bottom: 88px;
+    padding-bottom: 91px;
     width: 445px;
     margin: 0 auto;
   }

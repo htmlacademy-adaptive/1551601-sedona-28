@@ -1,7 +1,7 @@
 .button {
   background-color: $base-color-blue;
   border: none;
-  height: 58px;
+  //height: 58px;
 }
 
 .button__link {
@@ -9,4 +9,6 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $base-color;
+  padding: 18px 0 16px;
+  width: 100%;
 }

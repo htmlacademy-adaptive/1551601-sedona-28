@@ -1,5 +1,5 @@
 .footer__container {
-  padding: 33px 83px;
+  padding: 36px 82px 23px;
 }
 
 .footer__hashtag {
@@ -12,7 +12,7 @@
   font-weight: 700px;
   color: $black;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .footer {
@@ -28,9 +28,8 @@
   flex-direction: row;
   width: 129px;
   justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: end;
+  margin: 23px auto 0;
 
   &:hover {
     color: $blue-mark;
@@ -61,11 +60,6 @@
 
   .footer__development {
     margin: 0;
-    width: 230px;
-  }
-
-  .footer__logo {
-    width: 37px;
   }
 
   .footer__social {

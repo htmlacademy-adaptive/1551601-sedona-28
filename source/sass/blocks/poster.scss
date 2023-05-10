@@ -4,13 +4,14 @@
   background-color: $base-color;
   background-position: bottom, center top;
   background-size: cover;
-  padding: 90px 0 85px;
+  padding: 90px 0 80px;
   text-align: center;
 
   &--form {
-    background-image: url("../img/photo/back-desktop.jpg");
+    background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-form-mobile.jpg");
     height: 158px;
-    padding-top: 50px;
+    padding: 0;
+    padding-top: 52px;
     background-size: cover;
   }
 }
@@ -18,19 +19,24 @@
 @media (min-resolution: 2dppx) {
   .poster {
     background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile@2x.jpg");
+
+    &--form {
+      background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-form-mobile@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $tablet-size) {
   .poster {
-    padding: 77px 0 91px;
+    padding: 77px 0 86px;
     background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: contain, cover;
+    background-size: contain;
 
     &--form {
       height: 290px;
       padding: 95px 0 117px;
+      background-size: cover;
     }
   }
 
@@ -59,6 +65,7 @@
   }
 
   .poster--form {
+    background-image: url("../img/icons/intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
     height: 301px;
     padding: 101px 0 120px;
   }

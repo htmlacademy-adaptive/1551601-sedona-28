@@ -29,8 +29,8 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 16px;
+  right: 14px;
   z-index: 2;
   cursor: pointer;
 }
@@ -107,11 +107,13 @@
   .nav__item {
     width: calc(100% / 5);
     border: none;
+    padding: 18px 0 17px;
   }
 
   .nav__link {
     font-size: 14px;
     color: $black;
+    line-height: 21px;
 
     &--brown {
       color: $first-item;

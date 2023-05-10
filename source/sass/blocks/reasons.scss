@@ -4,15 +4,19 @@
   flex-wrap: wrap;
 }
 
+.reasons__img {
+  display: block;
+}
 
 .reasons__description {
   text-align: center;
-  padding: 32px 18px;
+  padding: 34px 18px;
   background-color: $base-color;
 }
 
 .reasons__description-title {
   margin-bottom: 35px;
+  padding: 0 6px;
 }
 
 .reasons__description-text {
@@ -20,13 +24,13 @@
 }
 
 .reasons__container {
-  padding: 54px 18px 40px;
+  padding: 38px 18px 37px;
   text-align: center;
   background-color: $reasons-grey;
 
   &--grey {
     border-bottom: 1px solid $border-grey;
-    padding: 24px 33px;
+    padding: 25px 33px;
   }
 
   &--blue {
@@ -37,7 +41,9 @@
   &--triangle {
     background-image: url("../../img/icons/triangle-02.svg");
     background-repeat: no-repeat;
-    background-position-y: -20px;
+    background-position-y: -19px;
+    padding-top: 53px;
+    padding-bottom: 40px;
   }
 }
 
@@ -47,7 +53,7 @@
 
 .reasons__text {
   margin: 0;
-  margin-top: 17px;
+  margin-top: 16px;
 }
 
 
@@ -60,14 +66,15 @@
 
   .reasons__description-title {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 
   .reasons__container {
     width: 256px;
-    padding: 40px;
 
     &--grey {
       border: none;
+      padding: 41px 33px;
     }
 
     &--triangle {
@@ -76,6 +83,10 @@
 
     &--blue {
       padding: 52px 33px 31px;
+    }
+
+    &--revert {
+      order: 2;
     }
   }
 
@@ -88,26 +99,35 @@
     width: calc(100% - 256px);
   }
 
-  .reasons__img {
-    display: block;
-  }
-
   .reasons__text {
     margin-top: 23px;
+
+    &--fourth {
+      margin: 24px 6px 0;
+    }
   }
 
   .reasons__title {
     padding: 0 20px;
+    margin-bottom: 13px;
   }
 }
 
 @media (min-width: $desktop-size) {
   .reasons__container {
     width: 400px;
-    padding: 50px;
+    padding: 52px 50px;
 
     &--triangle {
       background-image: none;
+    }
+  }
+
+  .reasons__text {
+    margin-top: 23px;
+
+    &--second {
+      margin: 24px 34px 0;
     }
   }
 
@@ -117,5 +137,13 @@
 
   .reasons__title {
     padding: 0 75px;
+  }
+
+  .reasons__description {
+    padding: 60px 0 45px;
+  }
+
+  .reasons__description-title {
+    margin-bottom: 28px;
   }
 }

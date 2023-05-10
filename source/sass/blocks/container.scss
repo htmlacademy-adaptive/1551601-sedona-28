@@ -1,12 +1,11 @@
 .container {
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 28px;
+  padding: 37px 0;
   border-bottom: 1px solid $decor-grey;
 }
 
 .container__title {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .container__text {
@@ -17,14 +16,14 @@
 @media (min-width: $tablet-size) {
   .container {
     padding-top: 66px;
-    padding-bottom: 64px;
-    width: 458px;
+    padding-bottom: 82px;
+    width: 436px;
     margin: 0 auto;
     border: none;
   }
 
   .container__title {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     font-size: 30px;
   }
 }
