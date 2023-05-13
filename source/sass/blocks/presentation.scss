@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-size) {
   .presentation {
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 40px;
   }
 
@@ -66,14 +66,14 @@
 
 @media (min-width: $desktop-size) {
   .presentation {
-    padding: 62px 200px 84px;
+    padding: 60px 200px 83px;
   }
 
   .presentation__description {
-    margin-top: 22px;
+    margin-top: 31px;
   }
 
   .presentation__text {
-    padding-bottom: 82px;
+    padding-bottom: 89px;
   }
 }

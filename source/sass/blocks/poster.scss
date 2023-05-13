@@ -2,17 +2,16 @@
   background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile.jpg");
   background-repeat: no-repeat no-repeat;
   background-color: $base-color;
-  background-position: bottom, center top;
-  background-size: cover;
+  background-position: bottom center, bottom center;
+  background-size: 100%, cover;
   padding: 90px 0 80px;
   text-align: center;
 
   &--form {
     background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-form-mobile.jpg");
-    height: 158px;
+    min-height: 158px;
     padding: 0;
     padding-top: 52px;
-    background-size: cover;
   }
 }
 
@@ -31,23 +30,21 @@
     padding: 77px 0 86px;
     background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: contain;
 
     &--form {
-      height: 290px;
-      padding: 95px 0 117px;
-      background-size: cover;
+      min-height: 290px;
+      padding: 95px 0 0;
     }
   }
 
   .poster__text {
     width: 461px;
-    height: 350px;
+    min-height: 350px;
+  }
 
-    &--form {
-      width: 456px;
-      height: 77px;
-    }
+  .poster__text-form {
+    width: 460px;
+    min-height: 81px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -66,8 +63,8 @@
 
   .poster--form {
     background-image: url("../img/icons/intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
-    height: 301px;
-    padding: 101px 0 120px;
+    min-height: 301px;
+    padding: 101px 0 0;
   }
 
   @media (min-resolution: 2dppx) {

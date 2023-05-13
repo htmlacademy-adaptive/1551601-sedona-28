@@ -2,8 +2,11 @@
   background-color: $base-color;
   display: block;
   height: 350px;
-  width: 100%;
   background-image: url("../img/photo/map-mobile.jpg");
+
+  & iframe {
+    width: 100%;
+  }
 }
 
 @media (min-resolution: 2dppx) {
