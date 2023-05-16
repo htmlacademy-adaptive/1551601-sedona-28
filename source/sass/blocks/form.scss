@@ -50,12 +50,12 @@
   background-position: 50% 50%;
 
   &--phone {
-    background-image: url("../img/icons/phone.svg");
+    background-image: url("/img/phone.svg");
     background-repeat: no-repeat;
   }
 
   &--mail {
-    background-image: url("../img/icons/mail.svg");
+    background-image: url("/img/mail.svg");
     background-repeat: no-repeat;
   }
 }
@@ -142,7 +142,7 @@
 .form__checkbox-custom::before {
   content: "";
   display: none;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("/img/tick.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 22px;

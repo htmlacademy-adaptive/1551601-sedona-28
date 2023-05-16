@@ -29,7 +29,7 @@
   &--house::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/house.svg");
+    background-image: url("/img/house.svg");
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -41,7 +41,7 @@
   &--burger::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/burger.svg");
+    background-image: url("/img/burger.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -53,7 +53,7 @@
   &--souvenirs::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/present.svg");
+    background-image: url("/img/present.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -127,7 +127,7 @@
     &--house::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/house.svg");
+      background-image: url("/img/house.svg");
       width: 81px;
       height: 73px;
       background-size: contain;
@@ -137,7 +137,7 @@
     &--burger::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/burger.svg");
+      background-image: url("/img/burger.svg");
       width: 79px;
       height: 67px;
       background-size: contain;
@@ -148,7 +148,7 @@
     &--souvenirs::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/present.svg");
+      background-image: url("/img/present.svg");
       width: 78px;
       height: 75px;
       background-size: contain;

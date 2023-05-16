@@ -11,20 +11,18 @@
   z-index: 10;
   justify-content: center;
 
-  &--off {
+  &--closed {
     display: none;
   }
 }
 
-.modal__error {
+.modal__body {
   width: 320px;
-  padding: 45px 42px 35px 41px;
   background-color: $base-color;
-}
 
-.modal__review {
-  width: 320px;
-  background-color: $base-color;
+  &--error {
+    padding: 45px 42px 35px 41px;
+  }
 }
 
 .modal__wrap {
@@ -62,9 +60,14 @@
 }
 
 @media (min-width: $tablet-size) {
-  .modal__error {
+  .modal__body--error {
     width: 400px;
     padding: 54px 47px 49px;
+  }
+
+  .modal__body--success {
+    width: 640px;
+    margin: 0 auto;
   }
 
   .modal__title {
@@ -81,11 +84,6 @@
 
   .modal__button-review {
     width: 458px;
-  }
-
-  .modal__review {
-    width: 640px;
-    margin: 0 auto;
   }
 
   .modal__wrap {

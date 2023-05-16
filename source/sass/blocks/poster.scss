@@ -1,5 +1,5 @@
 .poster {
-  background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile.jpg");
+  background-image: url("/img/intro-triangle.svg"), url("../img/photo/back-mobile.jpg");
   background-repeat: no-repeat no-repeat;
   background-color: $base-color;
   background-position: bottom center, bottom center;
@@ -8,7 +8,7 @@
   text-align: center;
 
   &--form {
-    background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-form-mobile.jpg");
+    background-image: url("/img/intro-triangle.svg"), url("../img/photo/back-form-mobile.jpg");
     min-height: 158px;
     padding: 0;
     padding-top: 52px;
@@ -17,10 +17,10 @@
 
 @media (min-resolution: 2dppx) {
   .poster {
-    background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-mobile@2x.jpg");
+    background-image: url("/img/intro-triangle.svg"), url("../img/photo/back-mobile@2x.jpg");
 
     &--form {
-      background-image: url("../img/icons/intro-triangle.svg"), url("../img/photo/back-form-mobile@2x.jpg");
+      background-image: url("/img/intro-triangle.svg"), url("../img/photo/back-form-mobile@2x.jpg");
     }
   }
 }
@@ -28,7 +28,7 @@
 @media (min-width: $tablet-size) {
   .poster {
     padding: 77px 0 86px;
-    background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
+    background-image: url("/img/intro-triangle-tablet.svg"), url("../img/photo/back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
 
     &--form {
@@ -49,7 +49,7 @@
 
   @media (min-resolution: 2dppx) {
     .poster {
-      background-image: url("../img/icons/intro-triangle-tablet.svg"), url("../img/photo/back-tablet@2x.jpg");
+      background-image: url("/img/intro-triangle-tablet.svg"), url("../img/photo/back-tablet@2x.jpg");
     }
   }
 }
@@ -57,19 +57,19 @@
 
 @media (min-width: $desktop-size) {
   .poster {
-    background-image: url("../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop.jpg");
+    background-image: url("/img/intro-triangle-desktop.svg"), url("../img/photo/back-desktop.jpg");
     background-repeat: no-repeat;
   }
 
   .poster--form {
-    background-image: url("../img/icons/intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
+    background-image: url("/img//intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
     min-height: 301px;
     padding: 101px 0 0;
   }
 
   @media (min-resolution: 2dppx) {
     .poster {
-      background-image: url("../img/icons/intro-triangle-desktop.svg"), url("../img/photo/back-desktop@2x.jpg");
+      background-image: url("/img/intro-triangle-desktop.svg"), url("../img/photo/back-desktop@2x.jpg");
     }
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
@@ -34,7 +34,7 @@
               <a class="nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--brown" href="form.html">Форма отзыва</a>
+              <a class="nav__link nav__link--current" href="form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">HTML Academy</a>
@@ -62,15 +62,15 @@
                   <ul class="form__list">
                     <li class="form__item">
                       <label  class="form__label" for="fname">Имя*:</label>
-                      <input class="form__input" type="text" id="fname" name="fname" placeholder="Имя" value="Пётр" required>
+                      <input class="form__input" type="text" id="fname" name="fname" placeholder="Имя" required>
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="lname">Фамилия*:</label>
-                      <input class="form__input" type="text" id="lname" name="lname" placeholder="Фамилия" value="Пустота" required>
+                      <input class="form__input" type="text" id="lname" name="lname" placeholder="Фамилия" required>
                     </li>
                     <li class="form__item">
                       <label class="form__label" for="sname">Отчество:</label>
-                      <input class="form__input" type="text" id="sname" name="sname" placeholder="Отчество" value="Викторович">
+                      <input class="form__input" type="text" id="sname" name="sname" placeholder="Отчество">
                     </li>
                   </ul>
                 </fieldset>
@@ -186,21 +186,21 @@
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="24" height="14">
-                  <use xlink:href="img/sprite.svg#vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="22" height="18">
-                  <use xlink:href="img/sprite.svg#telegram"></use>
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="20" height="14">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -208,19 +208,21 @@
           <a class="footer__logo footer__development" href="#">
             <p class="footer__text">Разработано</p>
             <svg class="footer__logo-html" width="29" height="35">
-              <use xlink:href="img/sprite.svg#html-logo" ></use>
+              <use xlink:href="img/sprite.svg#htmlacademy" ></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
-    <section class="modal modal--off">
-      <div class="modal__error">
+    <section class="modal modal--closed">
+      <div class="modal__body modal__body--error">
         <h2 class="modal__title page-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal__button-error button--link button">OK</button>
       </div>
-      <div class="modal__review">
+    </section>
+    <section class="modal modal--closed">
+      <div class="modal__body modal__body--success">
         <div class="modal__wrap">
           <h2 class="modal__title page-title">Ваш отзыв отправлен!</h2>
           <p class="modal__text modal__text--send">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>

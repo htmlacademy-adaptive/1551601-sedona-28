@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <title>HTML Academy: Седона</title>
   </head>
@@ -28,7 +28,7 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--brown" href="index.html">Главная</a>
+              <a class="nav__link nav__link--current" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html">Фото и видео</a>
@@ -46,7 +46,7 @@
         <section class="poster">
           <h1 class="visually-hidden">Город Седона</h1>
           <div class="poster__wrapper">
-            <img class="poster__text" src="./img/text-index.svg" alt="Седонаы">
+            <img class="poster__text" src="./img/text-index.svg" alt="Седона">
           </div>
         </section>
         <section class="reasons">
@@ -106,6 +106,10 @@
               </div>
               <div class="reasons__pic">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-bridge-desktop.webp 1x, img/photo/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-bridge-tablet.webp 1x, img/photo/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-bridge-mobile.webp 1x, img/photo/photo-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="./img/photo/photo-bridge-desktop.jpg 1x, ./img/photo/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo/photo-bridge-tablet.jpg 1x, ./img/photo/photo-bridge-tablet@2x.jpg 2x">
                   <img class="reasons__img" src="img/photo/photo-bridge-mobile.jpg" srcset="img/photo/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста">
@@ -154,21 +158,21 @@
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="24" height="14">
-                  <use xlink:href="img/sprite.svg#vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="22" height="18">
-                  <use xlink:href="img/sprite.svg#telegram"></use>
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
                 <svg class="social__icons" width="20" height="14">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -176,7 +180,7 @@
           <a class="footer__logo footer__development" href="#">
             <p class="footer__text">Разработано</p>
             <svg class="footer__logo-html" width="29" height="35">
-              <use xlink:href="img/sprite.svg#html-logo" ></use>
+              <use xlink:href="img/sprite.svg#htmlacademy" ></use>
             </svg>
           </a>
         </div>

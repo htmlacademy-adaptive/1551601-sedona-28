@@ -148,15 +148,15 @@
     color: $black;
     line-height: 21px;
 
-    &--brown {
+    &--current {
       color: $first-item;
     }
 
-    &:hover:not(.nav__link--brown) {
+    &:hover:not(.nav__link--current) {
       color: $blue-mark;
     }
 
-    &:active:not(.nav__link--brown) {
+    &:active:not(.nav__link--current) {
       color: rgba(0, 0, 0, 0.3);
     }
   }
