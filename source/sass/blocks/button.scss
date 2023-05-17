@@ -1,12 +1,27 @@
 .button {
   background-color: $base-color-blue;
   border: none;
-  height: 58px;
-}
-
-.button__link {
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
+  cursor: pointer;
   color: $base-color;
+
+  &:hover {
+    background-color: $hover-button;
+  }
+
+  &:active {
+    background-color: $active-button;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $decor-grey;
+  }
+
+  &--link {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 0 14px;
+    line-height: 26px;
+  }
 }

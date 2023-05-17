@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .presentation__video {
@@ -11,21 +11,22 @@
   width: 280px;
   height: 177px;
   background-color: $base-color-blue;
+  display: block;
 }
 
 .presentation__text {
   text-align: center;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 
 .presentation__description {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 26px;
 }
 
 .presentation__button {
   position: absolute;
-  background-image: url("../img/icons/polygon.svg");
+  background-image: url("../img/polygon.svg");
   background-repeat: no-repeat;
   width: 48px;
   height: 54px;
@@ -35,11 +36,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  z-index: 3;
 }
 
 @media (min-width: $tablet-size) {
   .presentation {
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 40px;
   }
 
@@ -53,7 +55,7 @@
   }
 
   .presentation__text {
-    padding-bottom: 88px;
+    padding-bottom: 91px;
     width: 445px;
     margin: 0 auto;
   }
@@ -65,14 +67,14 @@
 
 @media (min-width: $desktop-size) {
   .presentation {
-    padding: 62px 200px 84px;
+    padding: 60px 200px 83px;
   }
 
   .presentation__description {
-    margin-top: 22px;
+    margin-top: 31px;
   }
 
   .presentation__text {
-    padding-bottom: 82px;
+    padding-bottom: 89px;
   }
 }

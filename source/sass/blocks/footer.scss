@@ -1,5 +1,5 @@
 .footer__container {
-  padding: 33px 83px;
+  padding: 36px 82px 23px;
 }
 
 .footer__hashtag {
@@ -9,10 +9,10 @@
 
 .footer__hashtag-text {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
   color: $black;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .footer {
@@ -25,25 +25,32 @@
 
 .footer__development {
   display: flex;
-  flex-direction: row;
   width: 129px;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 23px auto 0;
+  text-decoration: none;
+  color: $black;
 
   &:hover {
     color: $blue-mark;
+
+    .footer__logo-html {
+      fill: $blue-mark;
+    }
+  }
+
+  &:active {
+    color: $active-link;
+
+    .footer__logo-html {
+      fill: $active-link;
+    }
   }
 }
 
 .footer__logo-html {
   fill: $black;
-}
-
-.footer__logo-html:hover + .footer__development:hover {
-  color: $blue-mark;
-  fill: $blue-mark;
 }
 
 @media (min-width: $tablet-size) {
@@ -61,11 +68,6 @@
 
   .footer__development {
     margin: 0;
-    width: 230px;
-  }
-
-  .footer__logo {
-    width: 37px;
   }
 
   .footer__social {

@@ -8,7 +8,6 @@
   flex-direction: column;
 
   @include list-reset;
-  background-color: $base-color-blue;
 }
 
 .nav__item {
@@ -16,6 +15,7 @@
   padding-top: 17px;
   padding-bottom: 13px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: $base-color-blue;
 }
 
 .nav__link {
@@ -29,10 +29,34 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 16px;
+  right: 14px;
   z-index: 2;
   cursor: pointer;
+}
+
+.nav__button-close {
+  fill: $base-color;
+
+  &:hover {
+    fill: rgba(225, 225, 225, 0.6);
+  }
+
+  &:active {
+    fill: rgba(225, 225, 225, 0.3);
+  }
+}
+
+.nav__button-open {
+  fill: $blue-mark;
+
+  &:hover {
+    fill: rgba(129, 179, 210, 0.6);
+  }
+
+  &:active {
+    fill: rgba(129, 179, 210, 0.3);
+  }
 }
 
 @media (max-width: $mobile-size) {
@@ -40,19 +64,27 @@
     display: none;
   }
 
-  .nav__button-close {
-    fill: $base-color;
+  .nav__item {
+    display: block;
+
+    &:hover {
+      background-color: $hover-button;
+    }
+
+    &:active {
+      background-color: $active-button;
+
+      & .nav__link {
+        color: rgba(225, 225, 225, 0.3);
+      }
+    }
   }
 
-  .nav__button-open {
-    fill: $blue-mark;
-  }
-
-  .nav__menu--nojs .nav__list {
+  .nav--nojs .nav__list {
     display: block;
   }
 
-  .nav__menu--nojs .main-header__logo {
+  .nav--nojs .main-header__logo {
     display: block;
     width: 185px;
     margin: 0 auto;
@@ -79,11 +111,11 @@
     display: none;
   }
 
-  .nav__menu--nojs .nav__toggle {
+  .nav--nojs .nav__toggle {
     display: none;
   }
 
-  .nav__menu--nojs .nav__button--close {
+  .nav--nojs .nav__button--close {
     display: none;
   }
 }
@@ -107,14 +139,25 @@
   .nav__item {
     width: calc(100% / 5);
     border: none;
+    padding: 18px 0 17px;
+    background-color: unset;
   }
 
   .nav__link {
     font-size: 14px;
     color: $black;
+    line-height: 21px;
 
-    &--brown {
+    &--current {
       color: $first-item;
+    }
+
+    &:hover:not(.nav__link--current) {
+      color: $blue-mark;
+    }
+
+    &:active:not(.nav__link--current) {
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 

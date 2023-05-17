@@ -1,12 +1,14 @@
 .benefits {
   padding: 23px 18px 46px 65px;
   background-color: $base-color;
+  width: 100%;
 }
 
 .benefits__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 100%;
 }
 
 .benefits__title {
@@ -19,7 +21,7 @@
 }
 
 .benefits__wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   position: relative;
 
   &--last-type {
@@ -29,37 +31,37 @@
   &--house::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/house.svg");
+    background-image: url("/img/house.svg");
     width: 40px;
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     left: -47px;
-    top: -7px;
+    top: -8px;
   }
 
   &--burger::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/burger.svg");
+    background-image: url("/img/burger.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
     left: -47px;
-    top: -7px;
+    top: -8px;
   }
 
   &--souvenirs::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/present.svg");
+    background-image: url("/img/present.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
     left: -47px;
-    top: -7px;
+    top: -8px;
   }
 }
 
@@ -92,15 +94,15 @@
       width: 77px;
       height: 72px;
       left: 50%;
-      top: -103px;
+      top: -98px;
       transform: translateX(-50%);
     }
 
     &--burger::before {
       content: "";
-      width: 80px;
-      height: 76px;
-      top: -103px;
+      width: 83px;
+      height: 67px;
+      top: -96px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -109,9 +111,9 @@
       content: "";
       width: 67px;
       height: 75px;
-      left: 50%;
+      left: 51%;
       transform: translateX(-50%);
-      top: -103px;
+      top: -95px;
     }
   }
 }
@@ -119,7 +121,7 @@
 @media (min-width: $desktop-size) {
   .benefits__items {
     width: calc(100% / 3);
-    padding: 158px 50px 60px;
+    padding: 169px 50px 70px;
     text-align: center;
   }
 
@@ -127,31 +129,32 @@
     &--house::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/house.svg");
-      width: 80px;
-      height: 74px;
+      background-image: url("/img/house.svg");
+      width: 81px;
+      height: 73px;
       background-size: contain;
-      top: -103px;
+      top: -101px;
     }
 
     &--burger::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/burger.svg");
-      width: 73px;
-      height: 69px;
+      background-image: url("/img/burger.svg");
+      width: 79px;
+      height: 67px;
       background-size: contain;
-      top: -103px;
+      top: -95px;
+      left: 49%;
     }
 
     &--souvenirs::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icons/present.svg");
+      background-image: url("/img/present.svg");
       width: 78px;
       height: 75px;
       background-size: contain;
-      top: -103px;
+      top: -100px;
     }
   }
 }

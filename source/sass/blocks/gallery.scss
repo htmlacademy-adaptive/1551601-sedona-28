@@ -7,8 +7,7 @@
 }
 
 .gallery__card {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 25px 0;
   border-bottom: 1px solid $decor-grey;
   position: relative;
 }
@@ -16,7 +15,11 @@
 .gallery__card-name {
   font-weight: 700;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 14px;
+}
+
+.gallery__card-img {
+  display: block;
 }
 
 .gallery__card-author {
@@ -25,8 +28,9 @@
 }
 
 .gallery__card-like {
-  display: inline-block;
-  margin-top: 11px;
+  display: flex;
+  margin-top: 12px;
+  align-items: baseline;
 }
 
 .gallery__card-icon {
@@ -35,6 +39,10 @@
   width: 23px;
   height: 21px;
   fill: rgba($color: $black, $alpha: 0.3);
+}
+
+.gallery__card-count {
+  font-weight: 700;
 }
 
 @media (min-width: $tablet-size) {
@@ -55,7 +63,7 @@
   .gallery__wrap {
     display: flex;
     flex-direction: row;
-    padding: 22px 20px 15px;
+    padding: 21px 20px 14px;
     justify-content: space-between;
     background-color: $light-grey;
 
@@ -71,6 +79,18 @@
 
   .gallery__card-name {
     margin: 0;
+  }
+
+  .gallery__card-author {
+    margin: 1px 0;
+  }
+
+  .gallery__card-like {
+    margin-top: 6px;
+  }
+
+  .gallery__card-icon {
+    margin-right: 10px;
   }
 }
 
@@ -90,6 +110,10 @@
     width: 100%;
     background-color: rgba($color: $black, $alpha: 0.3);
     color: $base-color;
+
+    &--small-card {
+      padding: 17px 20px 17px 25px;
+    }
   }
 
   .gallery__card-img {

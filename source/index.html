@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <div class="wrapper">
       <header class="main-header">
-        <nav class="nav nav__menu--nojs">
+        <nav class="nav nav--nojs">
           <a class="main-header__logo" href="index.html">
             <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
           </a>
@@ -28,7 +28,7 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--brown" href="index.html">Главная</a>
+              <a class="nav__link nav__link--current" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html">Фото и видео</a>
@@ -37,7 +37,7 @@
               <a class="nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">HTML Academy</a>
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -46,7 +46,7 @@
         <section class="poster">
           <h1 class="visually-hidden">Город Седона</h1>
           <div class="poster__wrapper">
-            <img class="poster__text" src="./img/text-index.svg">
+            <img class="poster__text" src="./img/text-index.svg" alt="Седона">
           </div>
         </section>
         <section class="reasons">
@@ -59,7 +59,7 @@
               <div class="reasons__container reasons__container--blue reasons__container--triangle">
                 <p class="page-titles reasons__title">НАСТОЯЩИЙ ГОРОДОК</p>
                 <span class="reasons__number">— №1 —</span>
-                <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="reasons__text">Седона не аттракцион для туристов, там&nbspтечет своя жизнь</p>
               </div>
               <div class="reasons__pic">
                 <picture>
@@ -69,7 +69,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/photo/photo-city-desktop.jpg 1x, ./img/photo/photo-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo/photo-city-tablet.jpg 1x, ./img/photo/photo-city-tablet@2x.jpg 2x">
-                  <img class="reasons__img" src="img/photo/photo-city-mobile.jpg" srcset="img/photo/photo-city-mobile@2x.jpg 2x">
+                  <img class="reasons__img" src="img/photo/photo-city-mobile.jpg" srcset="img/photo/photo-city-mobile@2x.jpg 2x" alt="Фото города">
                 </picture>
               </div>
               <div class="benefits">
@@ -85,30 +85,34 @@
                     <div class="benefits__wrapper benefits__wrapper--burger">
                       <!--<img class=benefits__img src="./img/icons/burger.svg"> -->
                       <h3 class="page-titles benefits__title">ЕДА</h3>
-                      <p class="benefits__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                      <p class="benefits__text">Всегда заказывайте фирменный бургер, вы&nbspне&nbspразочаруетесь!</p>
                   </div>
                   </li>
                   <li class="benefits__items">
                     <div class="benefits__wrapper benefits__wrapper--souvenirs benefits__wrapper--last-type">
                       <!--<img class=benefits__img src="./img/icons/present.svg">-->
                       <h3 class="page-titles benefits__title">СУВЕНИРЫ</h3>
-                      <p class="benefits__text">Не только китайского, но и местного производства!</p>
+                      <p class="benefits__text">Не только китайского, но&nbspи местного производства!</p>
                     </div>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="reasons__item">
-              <div class="reasons__container reasons__container--blue">
+              <div class="reasons__container reasons__container--blue reasons__container--revert">
                 <p class="page-titles reasons__title">ТАМ ЕСТЬ Мост дьявола</p>
                 <span class="reasons__number">— №2 —</span>
-                <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="reasons__text reasons__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reasons__pic">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-bridge-desktop.webp 1x, img/photo/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-bridge-tablet.webp 1x, img/photo/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo/photo-bridge-mobile.webp 1x, img/photo/photo-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="./img/photo/photo-bridge-desktop.jpg 1x, ./img/photo/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo/photo-bridge-tablet.jpg 1x, ./img/photo/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="reasons__img" src="img/photo/photo-bridge-mobile.jpg" srcset="img/photo/photo-bridge-mobile@2x.jpg 2x">
+                  <img class="reasons__img" src="img/photo/photo-bridge-mobile.jpg" srcset="img/photo/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста">
                 </picture>
               </div>
             </li>
@@ -123,11 +127,11 @@
               <div class="reasons__container reasons__container--grey">
                 <h3 class="page-titles reasons__title">Красивая дорога</h3>
                 <span class="reasons__number">— №4 —</span>
-                <p class="reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
+                <p class="reasons__text reasons__text--fourth">Ехать в Седону из Лас-Вегаса совсем не&nbspскучно! </p>
               </div>
             </li>
             <li class="reasons__item">
-              <div class="reasons__container reasons__container">
+              <div class="reasons__container reasons__container--grey">
                 <h3 class="page-titles reasons__title">Мало туристов</h3>
                 <span class="reasons__number">— №5 —</span>
                 <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
@@ -138,56 +142,50 @@
         <div class="search">
           <div class="search-container">
             <h3 class="search-container__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-            <p class="search-container__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+            <p class="search-container__text">Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в седоне
             </p>
-            <button class="search__button button button__link" type="button">Найти гостиницу</button>
+            <a class="search__button button button--link" href="#" type="button">Найти гостиницу</a>
           </div>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3999851.4940367425!2d-110.83826344491942!3d34.58823590255613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1680688442646!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3999851.4940367425!2d-110.83826344491942!3d34.58823590255613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1680688442646!5m2!1sru!2sru" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </main>
       <footer class="footer">
         <div class="footer__container">
           <a href="#" class="footer__hashtag"><h3 class="footer__hashtag-text">#visitSEDONA</h3></a>
-          <div class="footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="#">
-                  <svg class="social__icons" width="24" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_60987_971)">
-<!--                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z" fill="white"/></g><defs><clipPath id="clip0_60987_971"><rect width="24" height="24" fill="white"/></clipPath></defs>-->
-                    <use xlink:href="img/sprite.svg#vk"></use>
-                  </svg>
-                  </a>
-              </li>
-              <li class="social__item">
-                <a href="#">
-                  <svg class="social__icons" width="22" height="18">
-<!--                     <path d="M21.4391 1.62225L18.2704 16.566C18.0311 17.6205 17.4079 17.883 16.5221 17.3865L11.6936 13.8285L9.36415 16.0695C9.10615 16.3275 8.8909 16.5427 8.39365 16.5427L8.7409 11.6257L17.6891 3.54C18.0784 3.1935 17.6044 3.00075 17.0846 3.348L6.02215 10.314L1.25965 8.823C0.223899 8.49975 0.205149 7.78725 1.47565 7.29L20.1034 0.113249C20.9659 -0.210001 21.7204 0.305249 21.4391 1.623V1.62225Z" fill="white"/>-->
-                    <use xlink:href="img/sprite.svg#telegram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#">
-                  <svg class="social__icons" width="20" height="14">
-                    <use xlink:href="img/sprite.svg#youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__development">
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="ВКонтакте">
+                <svg class="social__icons" width="24" height="14">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Телеграм">
+                <svg class="social__icons" width="22" height="18">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Ютуб">
+                <svg class="social__icons" width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__logo footer__development" href="#">
             <p class="footer__text">Разработано</p>
-            <a class="footer__logo" href="#">
-              <svg class="footer__logo-html" width="29" height="35">
-                <use xlink:href="img/sprite.svg#html-logo" ></use>
-              </svg>
-            </a>
-          </div>
+            <svg class="footer__logo-html" width="29" height="35">
+              <use xlink:href="img/sprite.svg#htmlacademy" ></use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
-    <script src="./js/main.js" charset="utf-8"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
