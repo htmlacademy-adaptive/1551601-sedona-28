@@ -37,7 +37,7 @@
               <a class="nav__link nav__link--current" href="form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">HTML Academy</a>
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -46,7 +46,7 @@
         <section class="poster poster--form">
           <h1 class="visually-hidden">Город Седона</h1>
           <div class="poster__wrapper">
-            <img class="poster__text-form" src="./img/SEDONA.png" alt="Седона">
+            <img class="poster__text-form" src="./img/sedona.svg" alt="Седона">
           </div>
         </section>
         <section class="feedback">
@@ -110,7 +110,7 @@
                       </label>
                     </li>
                     <li class="form__selector">
-                      <label  class="form__selector-label">
+                      <label  class="form__selector-label form__selector-label--negative">
                         <input class="form__selector-indicator" type="radio" value="negative" name ="grade">
                         <span class="form__selector-custom"></span>
                         Скорее отрицательное
@@ -142,7 +142,7 @@
                       </label>
                     </li>
                     <li class="form__selector">
-                      <label class="form__selector-label">
+                      <label class="form__selector-label form__selector-label--mountain">
                         <input class="form__checkbox" type="checkbox" checked>
                         <span class="form__checkbox-custom"></span>
                         Гора-Колокол
@@ -156,7 +156,7 @@
                       </label>
                     </li>
                     <li class="form__selector">
-                      <label class="form__selector-label">
+                      <label class="form__selector-label form__selector-label--mountain">
                         <input class="form__checkbox" type="checkbox" id="bridge">
                         <span class="form__checkbox-custom"></span>
                         Красные скалы
@@ -169,10 +169,12 @@
             <div class="form__container form__container--review">
               <fieldset class="form__fieldset">
                 <legend class="form__legend form__legend--review page-titles">Опишите свои эмоции:</legend>
-                <textarea class="form__review" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
-                <div class="feedback__wrap">
-                  <button class="feedback__button button button--link" type="submit">Отправить отзыв</button>
-                  <p class="feedback__extra">* — обязательные поля</p>
+                <div class="form__textarea">
+                  <textarea class="form__review" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <div class="feedback__wrap">
+                    <button class="feedback__button button button--link" type="submit">Отправить отзыв</button>
+                    <p class="feedback__extra">* — обязательные поля</p>
+                  </div>
                 </div>
               </fieldset>
             </div>
@@ -184,21 +186,21 @@
           <a href="#" class="footer__hashtag"><h3 class="footer__hashtag-text">#visitSEDONA</h3></a>
           <ul class="social">
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="ВКонтакте">
                 <svg class="social__icons" width="24" height="14">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="Телеграм">
                 <svg class="social__icons" width="22" height="18">
                   <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link" aria-label="Ютуб">
                 <svg class="social__icons" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>

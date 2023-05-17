@@ -14,10 +14,6 @@
   height: 48px;
   position: relative;
 
-  &:disabled {
-    background-color: $decor-grey;
-  }
-
   &:hover {
     background-color: $hover-button;
   }

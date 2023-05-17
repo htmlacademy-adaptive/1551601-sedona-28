@@ -19,6 +19,11 @@
   margin-bottom: 33px;
 }
 
+.search__button {
+  display: block;
+  text-decoration: none;
+}
+
 
 @media (min-width: $tablet-size) {
   .search {

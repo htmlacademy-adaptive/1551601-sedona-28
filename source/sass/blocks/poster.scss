@@ -1,7 +1,7 @@
 .poster {
+  background-color: $active-link;
   background-image: url("/img/intro-triangle.svg"), url("../img/photo/back-mobile.jpg");
   background-repeat: no-repeat no-repeat;
-  background-color: $base-color;
   background-position: bottom center, bottom center;
   background-size: 100%, cover;
   padding: 90px 0 80px;
@@ -44,7 +44,7 @@
 
   .poster__text-form {
     width: 460px;
-    min-height: 81px;
+    min-height: 78px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -62,7 +62,7 @@
   }
 
   .poster--form {
-    background-image: url("/img//intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
+    background-image: url("/img/intro-triangle-form.svg"), url("../img/photo/back-desktop.jpg");
     min-height: 301px;
     padding: 101px 0 0;
   }

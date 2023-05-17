@@ -33,11 +33,11 @@
   }
 
   .feedback__text {
-    margin: 19px 0 0;
+    margin: 21px 0 0;
   }
 
   .feedback__container {
-    padding: 66px 0 28px;
+    padding: 64px 0 28px;
   }
 
   .feedback__wrap {
@@ -51,7 +51,7 @@
     font-size: 14px;
   }
 
-  .feedback__wrap .feedback__button {
+  .feedback__button {
     width: 324px;
   }
 }
@@ -60,5 +60,17 @@
 @media (min-width: $desktop-size) {
   .feedback {
     padding: 0 120px;
+  }
+
+  .feedback__container {
+    padding: 116px 0 28px;
+  }
+
+  .feedback__text {
+    margin: 30px 0 0;
+  }
+
+  .feedback__button {
+    width: 384px;
   }
 }

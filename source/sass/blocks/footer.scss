@@ -9,7 +9,7 @@
 
 .footer__hashtag-text {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
   color: $black;
   margin: 0;
   margin-bottom: 32px;
@@ -25,7 +25,6 @@
 
 .footer__development {
   display: flex;
-  //flex-direction: row;
   width: 129px;
   justify-content: space-between;
   align-items: center;
