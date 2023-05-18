@@ -42,6 +42,16 @@
   &--icon {
     width: 222px;
   }
+
+  &:hover {
+    background-color: $decor-grey;
+  }
+
+  &:active {
+    padding: 12.5px;
+    background-color: $base-color;
+    border: 4px solid $decor-grey;
+  }
 }
 
 .form__input-icon {
@@ -89,14 +99,6 @@
 
   @include large-print;
   text-transform: none;
-
-  &--negative {
-    margin-left: 10px;
-  }
-
-  &--mountain {
-    margin-left: 16px;
-  }
 }
 
 .form__selector-custom {
@@ -107,6 +109,14 @@
   background-color: $light-grey;
   border-radius: 50%;
   margin-right: 16px;
+
+  &:hover {
+    background-color: $decor-grey;
+  }
+
+  &:active {
+    background-color: $radio-down;
+  }
 }
 
 .form__selector-indicator {
@@ -124,7 +134,6 @@
   height: 16px;
   background-color: $extra-text;
   border-radius: 50%;
-
   position: absolute;
   left: 50%;
   top: 50%;
@@ -135,6 +144,11 @@
   display: block;
 }
 
+
+.form__selector-custom:hover::before {
+  background-color: rgba($color: $extra-text, $alpha: 0.3);
+}
+
 .form__checkbox-custom {
   position: relative;
   display: inline-block;
@@ -143,6 +157,10 @@
   border-radius: 4px;
   background-color: $light-grey;
   margin-right: 16px;
+
+  &:hover {
+    background-color: $decor-grey;
+  }
 }
 
 .form__checkbox {
@@ -165,6 +183,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.form__checkbox-custom:active::before {
+  background-color: rgba($color: $extra-text, $alpha: 0.3);
 }
 
 .form__checkbox:checked + .form__checkbox-custom::before {
@@ -313,6 +335,16 @@
 
     &--icon {
       width: 237px;
+    }
+  }
+
+  .form__selector-label {
+    &--negative {
+      margin-left: 10px;
+    }
+
+    &--mountain {
+      margin-left: 16px;
     }
   }
 }

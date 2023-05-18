@@ -23,6 +23,10 @@
   margin-bottom: 30px;
 }
 
+.footer__logo-html {
+  fill: $black;
+}
+
 .footer__development {
   display: flex;
   width: 129px;
@@ -49,10 +53,6 @@
   }
 }
 
-.footer__logo-html {
-  fill: $black;
-}
-
 @media (min-width: $tablet-size) {
   .footer__container {
     display: flex;
@@ -74,7 +74,6 @@
     margin: 0;
   }
 }
-
 
 @media (min-width: $desktop-size) {
   .footer__container {
