@@ -33,14 +33,16 @@
 .form__input {
   width: 280px;
   background-color: $light-grey;
-  border: none;
   padding: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  height: 58px;
+  border: 4px solid transparent;
 
   &::placeholder {
-    color: rgba($color: $black, $alpha: 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "PTSans", "Arial", sans-serif;
   }
 
   &--icon {
@@ -52,7 +54,6 @@
   }
 
   &:active {
-    padding: 12.5px;
     background-color: $base-color;
     border: 4px solid $decor-grey;
   }
@@ -149,7 +150,7 @@
 }
 
 .form__selector-custom:hover::before {
-  background-color: rgba($color: $extra-text, $alpha: 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .form__checkbox-custom {
@@ -164,6 +165,10 @@
   &:hover {
     background-color: $decor-grey;
   }
+
+  &:active {
+    background-color: $radio-down;
+  }
 }
 
 .form__checkbox {
@@ -177,9 +182,10 @@
 .form__checkbox-custom::before {
   content: "";
   display: none;
-  background-image: url("/img/tick.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  mask-image: url("/img/tick.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: $black;
   width: 22px;
   height: 16px;
   position: absolute;
@@ -189,7 +195,7 @@
 }
 
 .form__checkbox-custom:active::before {
-  background-color: rgba($color: $extra-text, $alpha: 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .form__checkbox:checked + .form__checkbox-custom::before {
@@ -207,9 +213,10 @@
   background-color: $light-grey;
 
   &::placeholder {
-    color: rgba($color: $black, $alpha: 0.3);
+    color: rgba(0, 0, 0, 0.3);
     line-height: 26px;
     font-size: 18px;
+    font-family: "PTSans", "Arial", sans-serif;
   }
 
   @include large-print;
