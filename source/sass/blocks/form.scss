@@ -39,6 +39,10 @@
   font-size: 18px;
   line-height: 26px;
 
+  &::placeholder {
+    color: rgba($color: $black, $alpha: 0.3);
+  }
+
   &--icon {
     width: 222px;
   }
@@ -144,7 +148,6 @@
   display: block;
 }
 
-
 .form__selector-custom:hover::before {
   background-color: rgba($color: $extra-text, $alpha: 0.3);
 }
@@ -205,6 +208,8 @@
 
   &::placeholder {
     color: rgba($color: $black, $alpha: 0.3);
+    line-height: 26px;
+    font-size: 18px;
   }
 
   @include large-print;

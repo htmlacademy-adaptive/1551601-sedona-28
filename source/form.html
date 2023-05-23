@@ -48,7 +48,7 @@
         <section class="poster poster--form">
           <h1 class="visually-hidden">Город Седона</h1>
           <div class="poster__wrapper">
-            <img class="poster__text-form" src="./img/sedona.svg" alt="Седона">
+            <img class="poster__text-form" src="./img/sedona.svg" alt="Седона" width="229" height="39">
           </div>
         </section>
         <section class="feedback">
@@ -84,7 +84,7 @@
                     <li class="form__item">
                       <label  class="form__label" for="phone-number">Контактный телефон*:</label>
                       <div class="form__input-icon">
-                        <input class="form__input form__input--icon" type="number" id="phone-number" name ="phone-number" placeholder="Введите телефон" required>
+                        <input class="form__input form__input--icon" type="tel" id="phone-number" name ="phone-number" placeholder="Введите телефон" required>
                         <span class="form__icon form__icon--phone"></span>
                       </div>
                     </li>
@@ -172,7 +172,9 @@
               <fieldset class="form__fieldset">
                 <legend class="form__legend form__legend--review page-titles">Опишите свои эмоции:</legend>
                 <div class="form__textarea">
-                  <textarea class="form__review" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <label>
+                    <textarea class="form__review" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
+                  </label>
                   <div class="feedback__wrap">
                     <button class="feedback__button button button--link" type="submit">Отправить отзыв</button>
                     <p class="feedback__extra">* — обязательные поля</p>
@@ -209,7 +211,7 @@
               </a>
             </li>
           </ul>
-          <a class="footer__logo footer__development" href="#">
+          <a class="footer__logo footer__development" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="footer__text">Разработано</p>
             <svg class="footer__logo-html" width="29" height="35">
               <use xlink:href="img/sprite.svg#htmlacademy" ></use>

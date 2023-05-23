@@ -16,6 +16,7 @@
   font-weight: 700;
   margin: 0;
   margin-top: 14px;
+  color: $black;
 }
 
 .gallery__card-img {
@@ -43,6 +44,7 @@
 
 .gallery__card-count {
   font-weight: 700;
+  color: $black;
 }
 
 @media (min-width: $tablet-size) {
@@ -120,7 +122,15 @@
     display: block;
   }
 
+  .gallery__card-name {
+    color: $base-color;
+  }
+
   .gallery__card-icon {
     fill: $base-color;
+  }
+
+  .gallery__card-count {
+    color: $base-color;
   }
 }
