@@ -1,0 +1,19 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $base-color;
+  position: relative;
+}
+
+
+@media (min-width: $tablet-size) {
+  .wrapper {
+    width: $tablet-size;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .wrapper {
+    width: $desktop-size;
+  }
+}

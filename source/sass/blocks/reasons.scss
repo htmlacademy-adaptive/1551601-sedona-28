@@ -49,6 +49,10 @@
 
 .reasons__title {
   margin-bottom: 11px;
+
+  &--blue {
+    color: $base-color;
+  }
 }
 
 .reasons__text {
@@ -81,7 +85,7 @@
     }
 
     &--blue {
-      padding: 52px 33px 31px;
+      padding: 52px 32px 31px;
     }
 
     &--revert {

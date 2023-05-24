@@ -5,37 +5,19 @@ body {
 
 .page__body {
   padding: 0;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  background-color: $back-color;
-}
-
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-  background-color: $base-color;
-  position: relative;
+  background-color: $light-grey;
+  color: $extra-text;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-@media (min-width: $tablet-size) {
-  .wrapper {
-    width: $tablet-size;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .wrapper {
-    width: $desktop-size;
-  }
 }

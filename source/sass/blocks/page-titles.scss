@@ -1,0 +1,13 @@
+.page-titles {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}
+
+@media (min-width: $tablet-size) {
+  .page-titles {
+    font-size: 21px;
+  }
+}
