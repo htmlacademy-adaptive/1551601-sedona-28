@@ -23,6 +23,7 @@
 
 .form__legend {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -41,7 +42,8 @@
   border: 4px solid transparent;
 
   &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    color: $placeholder;
+    opacity: 1;
     font-family: "PTSans", "Arial", sans-serif;
   }
 
@@ -58,6 +60,7 @@
     border: 4px solid $decor-grey;
   }
 }
+
 
 .form__input-icon {
   display: flex;
@@ -213,7 +216,8 @@
   background-color: $light-grey;
 
   &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    color: $placeholder;
+    opacity: 1;
     line-height: 26px;
     font-size: 18px;
     font-family: "PTSans", "Arial", sans-serif;
