@@ -42,8 +42,8 @@
   border: 4px solid transparent;
 
   &::placeholder {
-    color: $placeholder;
-    opacity: 1;
+    color: $black;
+    opacity: 0.3;
     font-family: "PTSans", "Arial", sans-serif;
   }
 
@@ -216,8 +216,8 @@
   background-color: $light-grey;
 
   &::placeholder {
-    color: $placeholder;
-    opacity: 1;
+    color: $black;
+    opacity: 0.3;
     line-height: 26px;
     font-size: 18px;
     font-family: "PTSans", "Arial", sans-serif;
